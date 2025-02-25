@@ -1,0 +1,182 @@
+<!--Services Page-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Year-round Yards</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Year-round Yards</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">About Us</a></li>
+                <li><a href="#services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Other Services</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://yardworx.ca/" target="_blank">Yardworx</a></li>
+                        <li><a href="https://www.propertywerks.ca/" target="_blank">Property Werks</a></li>
+                        <li><a href="https://mowsnowpros.com/cities/calgary-lawn-care-snow-removal/" target="_blank">Mow Snow Pros</a></li>
+                        <li><a href="https://www.yardly.ca/calgary/" target="_blank">Yardly</a></li>
+                        <li><a href="https://www.affordablelawnandsnow.ca/" target="_blank">Affordable Lawn & Snow</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+    <!-- Promotion Section -->
+    <section id="promotions">
+        <div class="promotions-container">
+        <h3>Special Offers</h3>
+        <div>
+            <p>Enjoy 20% off all lawn care services during summer months!</p>
+        </div>
+        </div>
+    </section>
+
+<!-- Services Section -->
+<section id="services">
+    <div class="services-container">
+        <!-- Services Content -->
+        <div class="services-text">
+            <h2>Our Services</h2>
+            <h3>Lawn Mowing</h3>
+            <p>Professional lawn care to maintain a lush, green yard.</p>
+            <h3>Snow Removal</h3>
+            <p>Reliable snow removal services to keep your property safe during winter.</p>
+        </div>
+        <!-- Image -->
+        <div class="services-image">
+            <img src="images\mowing.jpg" alt="Person Mowing Lawn" />  <!--https://www.pexels.com/photo/person-using-lawn-mower-11364122/-->
+        </div>
+    </div>
+</section>
+
+<!--Pricing and plans-->
+<section id="pricing-and-plans">
+    <h2>Pricing and Payment Plans</h2>
+    <div class="table-container">
+        <!-- Pricing Table -->
+        <div class="table-item">
+            <h3>Pricing Table</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Land Size</th>
+                        <th>Lawn Maintenance</th>
+                        <th>Snow Removal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Up to 5,000 sq. ft</td>
+                        <td>$100 - $150</td>
+                        <td>$80 - $120</td>
+                    </tr>
+                    <tr>
+                        <td>5,001 - 10,000 sq. ft</td>
+                        <td>$150 - $200</td>
+                        <td>$120 - $180</td>
+                    </tr>
+                    <tr>
+                        <td>10,001+ sq. ft</td>
+                        <td>$200+</td>
+                        <td>$180+</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- Payment Plans Table -->
+        <div class="table-item">
+            <h3>Payment Plans</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Plan Type</th>
+                        <th>Weekly</th>
+                        <th>Monthly</th>
+                        <th>Yearly</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Lawn Maintenance Plans -->
+                    <tr>
+                        <td rowspan="2">Lawn Maintenance</td>
+                        <td>Up to 5,000 sq. ft</td>
+                        <td>$30/week</td>
+                        <td>$110/month</td>
+                        <td>$1,200/year</td>
+                    </tr>
+                    <tr>
+                        <td>5,001+ sq. ft</td>
+                        <td>$50/week</td>
+                        <td>$180/month</td>
+                        <td>$2,000/year</td>
+                    </tr>
+                    <!-- Snow Removal Plans -->
+                    <tr>
+                        <td rowspan="2">Snow Removal</td>
+                        <td>Up to 5,000 sq. ft</td>
+                        <td>$25/week</td>
+                        <td>$90/month</td>
+                        <td>$950/year</td>
+                    </tr>
+                    <tr>
+                        <td>5,001+ sq. ft</td>
+                        <td>$45/week</td>
+                        <td>$160/month</td>
+                        <td>$1,800/year</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="plan-discount-note">* Yearly plans save up to 20% compared to weekly payments!</p>
+        </div>
+</section>
+    
+
+<!-- Quote Form Section -->
+<section id="quoteSection">
+    <form id="quoteForm">
+        <h2>Request a Quote</h2>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" required><br>
+
+        <label for="landSize">Land Size (sq. ft):</label><br>
+        <input type="number" id="landSize" name="landSize" required><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Result will be shown here -->
+    <div id="quoteResult"></div>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Year-round Yards. Designed by Heather-may Howse.</p>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
+
